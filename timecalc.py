@@ -57,7 +57,7 @@ def solve_problem(parts: List[str]) -> str:
                 return f"{secs}s"
 
             mins = secs % 60
-            hours = (secs - mins) // 60
+            hours = (secs - mins) // 60 % 24
 
             return f"{hours:02}:{mins:02}"
 
